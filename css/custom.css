@@ -430,6 +430,9 @@ a.topic:hover {
 .browser-default{
     margin: 20px 0px;
 }
+.stats{
+    margin-top: 0px !important;
+}
 @media only screen and (max-width: 600px) {
     .logo {
         margin: 15px 0px 0px 0px;
