@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+    <!--Import jQuery before materialize.js-->
+    <div class="navbar-fixed">
+        <nav class="red accent-4">
+            <div class="nav-wrapper">
+                <div class="col s12">
+                    <a href="index-logged-in.html" class="brand-logo">
+                        <img src="img/logo-mini-white.png" class="logo" />
+                    </a>
+
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <div class="right-nav hide-on-med-and-down">
+                        <img class="user-avatar-nav circle responsive-img" src="img/yuna.jpg" /><a class='dropdown-button right' href='#' data-activates='dropdown1'>Welcome John Doe <i class="material-icons">expand_more</i>
+                        </a>
+                        <ul id='dropdown1' class='dropdown-content nav-dropdown'>
+                            <li><a href="#">My Topics</a>
+                            </li>
+                            <li><a href="#">My Opinions</a>
+                            </li>
+                            <li><a href="#">My Challenges</a>
+                            </li>
+                            <li><a href="#">Notifications</a>
+                            </li>
+                            <li><a href="#">Dashboard</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#">Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="activity.html">Activity</a>
+                        </li>
+                        <li><a href="index-logged-in.html">Discover</a>
+                        </li>
+                        <li><a href="create-opinion.html">Create New Opinion</a>
+                        </li>
+
+                    </ul>
+                    <ul class="side-nav side-nav-custom" id="mobile-demo">
+                        <li class="waves-effect waves-teal"><a href="#">Dashboard</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="activity.html">Activity</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="index-logged-in.html">Discover</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="#">Create Opinion</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="#">My Topics</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="#">My Opinions</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="#">My Challenges</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="#">Sign Out</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="about-voppl.html">About VOPPL</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="tou.html">Terms Of Use</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="privacy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="welcome hide-on-small-and-down ">
+        <div class="overlay">
+            <div class="section bt valign-wrapper">
+                <h5 class="valign center white-text">Share An Opinion Or Challenge One.</h5>
+            </div>
+            <div class="section tp center-align">
+                <a href="sign-up.html" class="center waves-effect waves-light btn materialize-red accent-4">Sign Up Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="controls z-depth-1">
+        <ul class="controls-ul">
+            <li><a href="trending-topics.html"><i class="material-icons left">trending_up</i>Trending Topics</a>
+            </li>
+            <li><a href="featured-opinions.html"><i class="material-icons left">loyalty</i>Featured Opinions</a>
+            </li>
+            <li><a href="categories.html"><i class="material-icons left">list</i>Categories</a>
+            </li>
+            <li><a href="advanced-filters.html"><i class="material-icons left">equalizer</i>Advanced Filters</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <h3>Categories</h3>
+                    <div class="divider"></div>
+                    <div class="col m3">
+                        <h5>History</h5>
+                        <div class="divider"></div>
+                        <ul class="category-list">
+                            <li>
+                                <input type="checkbox" id="1" />
+                                <label for="1">World History</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="2" />
+                                <label for="2">Asian History</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="3" />
+                                <label for="3">History of War</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="4" />
+                                <label for="4">History of Politics</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="5" />
+                                <label for="5">History of United States</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="6" />
+                                <label for="6">History of international Cricket</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="7" />
+                                <label for="7">History if English Literature</label>
+                            </li>
+                        </ul>
+                        <h5>Health</h5>
+                        <div class="divider"></div>
+                        <ul class="category-list">
+                            <li>
+                                <input type="checkbox" id="8" />
+                                <label for="8">Neurology</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="9" />
+                                <label for="9">Psychology</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="10" />
+                                <label for="10">Cancer</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="11" />
+                                <label for="11">Diabetes</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="12" />
+                                <label for="12">Cardiology</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="13" />
+                                <label for="13">Medical Sciences</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="14" />
+                                <label for="14">Hospitals</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col m3">
+                        <h5>Politics</h5>
+                        <div class="divider"></div>
+                        <ul class="category-list">
+                            <li>
+                                <input type="checkbox" id="15" />
+                                <label for="15">Asian Politics</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="16" />
+                                <label for="16">US Politics</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="17" />
+                                <label for="17">US & Canadian Elections</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="18" />
+                                <label for="18">Canadian Politics</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="19" />
+                                <label for="19">Political Affairs</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="20" />
+                                <label for="20">Political Crimes</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="21" />
+                                <label for="21">Politics Today</label>
+                            </li>
+                        </ul>
+                        <h5>Sports</h5>
+                        <div class="divider"></div>
+                        <ul class="category-list">
+                            <li>
+                                <input type="checkbox" id="22" />
+                                <label for="22">International Cricket</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="23" />
+                                <label for="23">Basketball</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="24" />
+                                <label for="24">Baseball</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="25" />
+                                <label for="25">Formula F1</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="26" />
+                                <label for="26">Indiana Polis</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="27" />
+                                <label for="27">Super Bikes</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="28" />
+                                <label for="28">Olympics</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col m3">
+                        <h5>Poetry</h5>
+                        <div class="divider"></div>
+                        <ul class="category-list">
+                            <li>
+                                <input type="checkbox" id="29" />
+                                <label for="29">Shakespeare</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="30" />
+                                <label for="30">Asian Poets</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="31" />
+                                <label for="31">American Poets</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="32" />
+                                <label for="32">Canadian Poets</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="34" />
+                                <label for="34">Best Poetry</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="35" />
+                                <label for="35">Western Poetry</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="36" />
+                                <label for="36">Poetry</label>
+                            </li>
+                        </ul>
+                        <h5>Education</h5>
+                        <div class="divider"></div>
+                        <ul class="category-list">
+                            <li>
+                                <input type="checkbox" id="37" />
+                                <label for="37">High Schools</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="38" />
+                                <label for="38">Universities</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="39" />
+                                <label for="39">Educational Activity</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="40" />
+                                <label for="40">Kindergarten</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="50" />
+                                <label for="50">Educational Organizations</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="51" />
+                                <label for="51">MEducation Funding</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="52" />
+                                <label for="52">Home schooling</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col m3">
+                        <h5>Science</h5>
+                        <div class="divider"></div>
+                        <ul class="category-list">
+                            <li>
+                                <input type="checkbox" id="53" />
+                                <label for="53">Experiments</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="54" />
+                                <label for="54">Science Myths</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="55" />
+                                <label for="55">Famous Scientists</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="56" />
+                                <label for="56">Famous Theories</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="57" />
+                                <label for="57">Inventions</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="58" />
+                                <label for="58">Organizational</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="59" />
+                                <label for="59">Technology</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col m3">
+                        <h5>Technology</h5>
+                        <div class="divider"></div>
+                        <ul class="category-list">
+                            <li>
+                                <input type="checkbox" id="60" />
+                                <label for="60">Mobile Technology</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="61" />
+                                <label for="61">Electronics</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="62" />
+                                <label for="62">Nasa</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="63" />
+                                <label for="63">Electro Surgery</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="67" />
+                                <label for="67">Home Automation</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="68" />
+                                <label for="68">Home Electronics</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="69" />
+                                <label for="69">Space Technology</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="divider"></div>
+
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <ul class="pagination">
+                            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a>
+                            </li>
+                            <li class="active"><a href="#!">1</a>
+                            </li>
+                            <li class="waves-effect"><a href="#!">2</a>
+                            </li>
+                            <li class="waves-effect"><a href="#!">3</a>
+                            </li>
+                            <li class="waves-effect"><a href="#!">4</a>
+                            </li>
+                            <li class="waves-effect"><a href="#!">5</a>
+                            </li>
+                            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="quick-filters">
+        <h6 class="blue-text">Popular Topics</h6>
+        <ul class="popular-topics">
+            <li><a href="#">Healthcare</a>
+            </li>
+            <li><a href="#">Sports & Fitness</a>
+            </li>
+            <li><a href="#">International Affairs</a>
+            </li>
+            <li><a href="#">World Politics</a>
+            </li>
+            <li><a href="#">USA Today</a>
+            </li>
+        </ul>
+        <div class="divider"></div>
+        <div class="input-field quick-search col s12">
+            <input id="seacrh" type="search" class="validate">
+            <label for="search" data-error="wrong" data-success="right">Search</label>
+        </div>
+        <div class="divider"></div>
+        <div class="add-block"></div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-opinion">
+        <div class="modal-content">
+            <div class="opinion-content">
+                <h5 class="long-title-modal">What Does This Opinion Say - a longer title that explains more about the Opinion</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate purus erat, vitae elementum eros varius vitae. Donec dui libero, semper nec posuere eget, fermentum vitae nunc. Nam sed interdum quam, sit amet feugiat odio. Sed pellentesque vitae urna eleifend mattis. Mauris interdum nulla sed sem iaculis, ac aliquam quam sodales. Aenean euismod sagittis lacinia. Morbi condimentum elit ac maximus laoreet. Duis aliquam tempor massa, malesuada lobortis diam mollis vitae. Nullam sed ullamcorper augue. </p>
+                <a href="opinion.html">More on the opinion page.....</a>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <ul class="opinion-stats">
+                <li>
+                    <p>Challenges: <span class="light-blue-text">99</span>
+                    </p>
+                </li>
+                <li>
+                    <p>Joins: <span class="light-blue-text">999876</span>
+                    </p>
+                </li>
+            </ul>
+            <a href="opinion.html" class=" modal-action modal-close waves-effect waves-light btn blue white-text btn-opinion-footer">Go To Opinion</a>
+        </div>
+    </div>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+</body>
+
+</html>

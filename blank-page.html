@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<body>
+    <!--Import jQuery before materialize.js-->
+    <div class="navbar-fixed">
+        <nav class="red accent-4">
+            <div class="nav-wrapper">
+                <div class="col s12">
+                    <a href="index-logged-in.html" class="brand-logo">
+                        <img src="img/logo-mini-white.png" class="logo" />
+                    </a>
+
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <div class="right-nav hide-on-med-and-down">
+                        <img class="user-avatar-nav circle responsive-img" src="img/yuna.jpg" /><a class='dropdown-button right' href='#' data-activates='dropdown1'>Welcome John Doe <i class="material-icons">expand_more</i>
+                        </a>
+                        <ul id='dropdown1' class='dropdown-content nav-dropdown'>
+                            <li><a href="#">My Topics</a>
+                            </li>
+                            <li><a href="#">My Opinions</a>
+                            </li>
+                            <li><a href="#">My Challenges</a>
+                            </li>
+                            <li><a href="#">Notifications</a>
+                            </li>
+                            <li><a href="#">Dashboard</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#">Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="activity.html">Activity</a>
+                        </li>
+                        <li><a href="index-logged-in.html">Discover</a>
+                        </li>
+                        <li><a href="create-opinion.html">Create New Opinion</a>
+                        </li>
+
+                    </ul>
+                    <ul class="side-nav side-nav-custom" id="mobile-demo">
+                        <li class="waves-effect waves-teal"><a href="#">Dashboard</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="activity.html">Activity</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="index-logged-in.html">Discover</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="#">Create Opinion</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="#">My Topics</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="#">My Opinions</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="#">My Challenges</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="#">Sign Out</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="about-voppl.html">About VOPPL</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="tou.html">Terms Of Use</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="privacy.html">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="welcome hide-on-small-and-down ">
+        <div class="overlay">
+            <div class="section bt valign-wrapper">
+                <h5 class="valign center white-text">Share An Opinion Or Challenge One.</h5>
+            </div>
+            <div class="section tp center-align">
+                <a href="sign-up.html" class="center waves-effect waves-light btn materialize-red accent-4">Sign Up Now</a>
+            </div>
+        </div>
+    </div>
+    <div class="controls z-depth-1">
+        <ul class="controls-ul">
+            <li><a href="trending-topics.html"><i class="material-icons left">trending_up</i>Trending Topics</a>
+            </li>
+            <li><a href="featured-opinions.html"><i class="material-icons left">loyalty</i>Featured Opinions</a>
+            </li>
+            <li><a href="categories.html"><i class="material-icons left">list</i>Categories</a>
+            </li>
+            <li><a href="advanced-filters.html"><i class="material-icons left">equalizer</i>Advanced Filters</a>
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="quick-filters">
+        <h6 class="blue-text">Popular Topics</h6>
+        <ul class="popular-topics">
+            <li><a href="#">Healthcare</a>
+            </li>
+            <li><a href="#">Sports & Fitness</a>
+            </li>
+            <li><a href="#">International Affairs</a>
+            </li>
+            <li><a href="#">World Politics</a>
+            </li>
+            <li><a href="#">USA Today</a>
+            </li>
+        </ul>
+        <div class="divider"></div>
+        <div class="input-field quick-search col s12">
+            <input id="seacrh" type="search" class="validate">
+            <label for="search" data-error="wrong" data-success="right">Search</label>
+        </div>
+        <div class="divider"></div>
+        <div class="add-block"></div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-opinion">
+        <div class="modal-content">
+            <div class="opinion-content">
+                <h5 class="long-title-modal">What Does This Opinion Say - a longer title that explains more about the Opinion</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate purus erat, vitae elementum eros varius vitae. Donec dui libero, semper nec posuere eget, fermentum vitae nunc. Nam sed interdum quam, sit amet feugiat odio. Sed pellentesque vitae urna eleifend mattis. Mauris interdum nulla sed sem iaculis, ac aliquam quam sodales. Aenean euismod sagittis lacinia. Morbi condimentum elit ac maximus laoreet. Duis aliquam tempor massa, malesuada lobortis diam mollis vitae. Nullam sed ullamcorper augue. </p>
+                <a href="opinion.html">More on the opinion page.....</a>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <ul class="opinion-stats">
+                <li>
+                    <p>Challenges: <span class="light-blue-text">99</span>
+                    </p>
+                </li>
+                <li>
+                    <p>Joins: <span class="light-blue-text">999876</span>
+                    </p>
+                </li>
+            </ul>
+            <a href="opinion.html" class=" modal-action modal-close waves-effect waves-light btn blue white-text btn-opinion-footer">Go To Opinion</a>
+        </div>
+    </div>
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+</body>
+
+</html>
