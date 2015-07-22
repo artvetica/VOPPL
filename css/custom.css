@@ -369,7 +369,7 @@ a.topic:hover {
     max-width: 450px;
     margin: 0 auto;
     display: block;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 .log-in-box .btn {
@@ -389,10 +389,6 @@ a.topic:hover {
 
 .log-in-logo {
     max-width: 150px;
-}
-
-.wrap {
-    min-height: 3000px;
 }
 
 .static-pages {
