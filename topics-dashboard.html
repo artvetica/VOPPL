@@ -26,15 +26,7 @@
                         <img class="user-avatar-nav circle responsive-img" src="img/yuna.jpg" /><a class='dropdown-button right' href='#' data-activates='dropdown1'>Welcome John Doe <i class="material-icons">expand_more</i>
                         </a>
                         <ul id='dropdown1' class='dropdown-content nav-dropdown'>
-                            <li><a href="topics-dashboard.html">My Topics</a>
-                            </li>
-                            <li><a href="opinions-dashboard.html">My Opinions</a>
-                            </li>
-                            <li><a href="#">My Challenges</a>
-                            </li>
-                            <li><a href="notifications-dashboard.html">Notifications</a>
-                            </li>
-                            <li><a href="dashboard.html">Dashboard</a>
+                            <li><a href="#">Home</a>
                             </li>
                             <li class="divider"></li>
                             <li><a href="#">Sign Out</a>
@@ -59,11 +51,21 @@
                         </li>
                         <li class="waves-effect waves-teal"><a href="create-opinion.html">Create Opinion</a>
                         </li>
-                        <li class="waves-effect waves-teal"><a href="topics-dashboard.html">My Topics</a>
+                        <li class="waves-effect waves-teal"><a href="topics-dashboard.html">Topics</a>
                         </li>
-                        <li class="waves-effect waves-teal"><a href="opinions-dashboard.html">My Opinions</a>
+                        <li class="waves-effect waves-teal"><a href="opinions-dashboard.html">Opinions</a>
                         </li>
-                        <li class="waves-effect waves-teal"><a href="#">My Challenges</a>
+                        <li class="waves-effect waves-teal"><a href="joins-dashboard.html">Joins</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="challenges-dashboard.html">Challenges</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="notifications-dashboard.html">Notifications</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="#">Messages</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="#">Friends</a>
+                        </li>
+                        <li class="waves-effect waves-teal"><a href="#">Settings</a>
                         </li>
                         <li class="waves-effect waves-teal"><a href="#">Sign Out</a>
                         </li>
@@ -78,32 +80,145 @@
             </div>
         </nav>
     </div>
-    <div class="welcome hide-on-small-and-down ">
-        <div class="overlay">
-            <div class="section bt valign-wrapper">
-                <h5 class="valign center white-text">Share An Opinion Or Challenge One.</h5>
-            </div>
-            <div class="section tp center-align">
-                <a href="sign-up.html" class="center waves-effect waves-light btn materialize-red accent-4">Sign Up Now</a>
-            </div>
+
+    <div class="sidebar hide-on-med-and-down">
+        <div class="collection">
+            <a href="dashboard.html" class="collection-item">Dashboard</a>
+            <a href="topics-dashboard.html" class="collection-item">Topics</a>
+            <a href="opinions-dashboard.html" class="collection-item">Opinions</a>
+            <a href="joins-dashboard.html" class="collection-item">Joins</a>
+            <a href="challenges-dashboard.html" class="collection-item">Challenges</a>
+            <a href="notifications-dashboard.html" class="collection-item">Notifications</a>
+            <a href="#!" class="collection-item">Messages</a>
+            <a href="#!" class="collection-item">Friends</a>
+            <a href="#!" class="collection-item">Settings</a>
         </div>
     </div>
-    <div class="controls z-depth-1">
-        <ul class="controls-ul">
-            <li><a href="trending-topics.html"><i class="material-icons left">trending_up</i>Trending Topics</a>
-            </li>
-            <li><a href="featured-opinions.html"><i class="material-icons left">loyalty</i>Featured Opinions</a>
-            </li>
-            <li><a href="categories.html"><i class="material-icons left">list</i>All Topics</a>
-            </li>
-            <li><a href="advanced-filters.html"><i class="material-icons left">equalizer</i>Advanced Filters</a>
-            </li>
-        </ul>
-    </div>
-    <div class="content">
+    <div class="dashboard-body">
         <div class="container">
             <div class="row">
                 <div class="col s12 m12 l12">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card-panel">
+                                <h5>Add a new topic</h5>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <input type="text" placeholder="Enter Topic Name" />
+                                    </div>
+
+                                    <div class="col s12">
+                                        <h6>Select Main Category</h6>
+                                    </div>
+
+                                    <div class="col s12">
+                                        <select class="browser-default">
+                                            <option>Option One</option>
+                                            <option>Option Two</option>
+                                        </select>
+                                    </div>
+                                    <div class="col s12">
+                                        <a href="#" class="btn btn-sm">Add new topic</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 m12 l12">
+                            <h3>My Topics</h3>
+                            <div class="divider"></div>
+                            <table class="bordered">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Topic</th>
+                                        <th>No. of Opinions</th>
+                                        <th>No Challenges</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Health</td>
+                                        <td>2987</td>
+                                        <td>2987</td>
+                                        <td><a href="#" class="btn btn-sm blue accent-2">Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Education</td>
+                                        <td>2987</td>
+                                        <td>2987</td>
+                                        <td><a href="#" class="btn btn-sm blue accent-2">Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Physics</td>
+                                        <td>2987</td>
+                                        <td>2987</td>
+                                        <td><a href="#" class="btn btn-sm blue accent-2">Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Politics</td>
+                                        <td>2987</td>
+                                        <td>2987</td>
+                                        <td><a href="#" class="btn btn-sm blue accent-2">Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Politics</td>
+                                        <td>2987</td>
+                                        <td>2987</td>
+                                        <td><a href="#" class="btn btn-sm blue accent-2">Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Politics</td>
+                                        <td>2987</td>
+                                        <td>2987</td>
+                                        <td><a href="#" class="btn btn-sm blue accent-2">Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Politics</td>
+                                        <td>2987</td>
+                                        <td>2987</td>
+                                        <td><a href="#" class="btn btn-sm blue accent-2">Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Politics</td>
+                                        <td>2987</td>
+                                        <td>2987</td>
+                                        <td><a href="#" class="btn btn-sm blue accent-2">Delete</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Politics</td>
+                                        <td>2987</td>
+                                        <td>2987</td>
+                                        <td><a href="#" class="btn btn-sm blue accent-2">Delete</a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <div class="divider"></div>
+
+                        </div>
+                    </div>
                     <h3>All Topics</h3>
                     <div class="divider"></div>
                     <div class="col m3">
@@ -373,74 +488,8 @@
                         </ul>
                     </div>
                     <div class="divider"></div>
-
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <ul class="pagination">
-                            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a>
-                            </li>
-                            <li class="active"><a href="#!">1</a>
-                            </li>
-                            <li class="waves-effect"><a href="#!">2</a>
-                            </li>
-                            <li class="waves-effect"><a href="#!">3</a>
-                            </li>
-                            <li class="waves-effect"><a href="#!">4</a>
-                            </li>
-                            <li class="waves-effect"><a href="#!">5</a>
-                            </li>
-                            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="quick-filters">
-        <h6 class="blue-text">Popular Topics</h6>
-        <ul class="popular-topics">
-            <li><a href="#">Healthcare</a>
-            </li>
-            <li><a href="#">Sports & Fitness</a>
-            </li>
-            <li><a href="#">International Affairs</a>
-            </li>
-            <li><a href="#">World Politics</a>
-            </li>
-            <li><a href="#">USA Today</a>
-            </li>
-        </ul>
-        <div class="divider"></div>
-        <div class="input-field quick-search col s12">
-            <input id="seacrh" type="search" class="validate">
-            <label for="search" data-error="wrong" data-success="right">Search</label>
-        </div>
-        <div class="divider"></div>
-        <div class="add-block"></div>
-    </div>
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal modal-opinion">
-        <div class="modal-content">
-            <div class="opinion-content">
-                <h5 class="long-title-modal">What Does This Opinion Say - a longer title that explains more about the Opinion</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate purus erat, vitae elementum eros varius vitae. Donec dui libero, semper nec posuere eget, fermentum vitae nunc. Nam sed interdum quam, sit amet feugiat odio. Sed pellentesque vitae urna eleifend mattis. Mauris interdum nulla sed sem iaculis, ac aliquam quam sodales. Aenean euismod sagittis lacinia. Morbi condimentum elit ac maximus laoreet. Duis aliquam tempor massa, malesuada lobortis diam mollis vitae. Nullam sed ullamcorper augue. </p>
-                <a href="opinion.html">More on the opinion page.....</a>
-            </div>
-        </div>
-        <div class="modal-footer">
-            <ul class="opinion-stats">
-                <li>
-                    <p>Challenges: <span class="light-blue-text">99</span>
-                    </p>
-                </li>
-                <li>
-                    <p>Joins: <span class="light-blue-text">999876</span>
-                    </p>
-                </li>
-            </ul>
-            <a href="opinion.html" class=" modal-action modal-close waves-effect waves-light btn blue white-text btn-opinion-footer">Go To Opinion</a>
         </div>
     </div>
     <script src="js/jquery.js" type="text/javascript"></script>
