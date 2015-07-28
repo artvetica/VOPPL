@@ -454,20 +454,46 @@ a.topic:hover {
 .sidebar .collection .collection-item:hover {
     background-color: #f8f8f8 !important;
 }
-.header-dashpage{
+
+.header-dashpage {
     background-color: #fff;
 }
-.dashboard-body .container{
+
+.dashboard-body .container {
     width: 95%;
 }
-.card-suggestion a{
+
+.card-suggestion a {
     color: #fff;
     font-weight: 700;
     text-decoration: underline;
 }
-.suggestion-action{
+
+.suggestion-action {
     float: right;
 }
+
+.messages-option li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.messages-option li a {
+    background-color: #f0f0f0 !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #000;
+    padding: 6px 12px;
+    border-radius: 3px;
+}
+
+.messages-option li a:hover {
+    background-color: #000 !important;
+    border: 1px solid rgba(0, 0, 0, 10);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 3px;
+}
+
 @media only screen and (max-width: 600px) {
     .logo {
         margin: 15px 0px 0px 0px;
@@ -543,5 +569,4 @@ a.topic:hover {
     .quick-filters {
         display: none !important
     }
-    
 }
